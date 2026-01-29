@@ -221,7 +221,7 @@ class CMeans(BaseEstimator, TransformerMixin):
             )
 
     def fit(self, X, init=None):
-        X = self._validate_data(X, dtype=[np.float64, np.float32])
+        # X = self._validate_data(X, dtype=[np.float64, np.float32])
         self._check_parameters()
         self._check_data(X)
         random_state = check_random_state(self.random_state)
@@ -270,7 +270,7 @@ class CMeans(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X, init=None, max_iter=None, random_state=None):
-        X = self._validate_data(X, dtype=[np.float64, np.float32])
+        # X = self._validate_data(X, dtype=[np.float64, np.float32])
         self._check_data(X)
         data = X.T
         if max_iter is None:
