@@ -1,6 +1,9 @@
 numpy>=1.23
 scipy>=1.9
 scikit-learn>=1.1
+scikit-image>=0.20
 matplotlib>=3.5
+pandas>=2.0
 blosc2>=2.0.0
 lz4>=4.3
+archetypes>=0.6
